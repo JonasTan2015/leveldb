@@ -13,6 +13,10 @@
 
 namespace leveldb {
 
+ /**
+  * This class allocates new memory blocks dynamically, it guarantees the total memory consumption does not exceed the limit.
+  * And this class controls the life cycle the memory blocks.
+  **/
 class Arena {
  public:
   Arena();
